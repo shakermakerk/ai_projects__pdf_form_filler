@@ -61,7 +61,7 @@ def parse_knowledge_with_llm(knowledge, form_fields):
         
         # Get completion from OpenAI
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that extracts information from text and maps it to form fields. Respond only with valid JSON."},
                 {"role": "user", "content": prompt}

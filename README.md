@@ -22,7 +22,7 @@ This Python-based tool automates the process of filling PDF forms, reducing manu
 
 ## Features
 
-- Automated PDF form filling using OpenAI GPT-3.5
+- Automated PDF form filling using OpenAI gpt-4o-mini
 - Smart field matching based on provided knowledge
 - Logging system for tracking operations
 - Automatic output directory management
@@ -32,7 +32,7 @@ This Python-based tool automates the process of filling PDF forms, reducing manu
 
 - Cannot fill in checkboxes
 - Cannot fill in dropdown fields
-- May generate placeholder data for some fields
+- May generate haluncinated data for some fields
 
 ## Getting Started
 
