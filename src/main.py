@@ -35,9 +35,11 @@ def parse_knowledge_with_llm(knowledge, form_fields):
         prompt = f"""
         You are provided with detailed knowledge about a person and a list of form fields from a PDF document.
         Your task is to create a JSON object that accurately maps each form field to the corresponding value extracted from the knowledge.
+        Ignore any fields that are of type drop down.
+        Do not make things up, if you do not know the answer leave the result blank. 
         
         Instructions:
-        1. Analyze the provided knowledge to identify relevant information for each form field.
+        1. Analyze the provided knowledge to identify relevant information for each form field. Always pay attention to the contect to the knowledge base. markdown headeers are used to group information context groups. 
         2. If a form field cannot be directly matched with the knowledge, assign it an empty string.
         3. Ensure the JSON object is valid and contains all form fields, even if some are empty.
         4. Handle any ambiguities by making reasonable assumptions based on the context provided.

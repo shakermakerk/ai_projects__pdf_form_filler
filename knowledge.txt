@@ -1,4 +1,31 @@
-Basic personal information
-Mike Hunt at 123 Main Street in Sampleville, Britain, a charming place known for its vibrant community. 
-His residence is marked as house number 45, and he resides in a cosy apartment labelled Apt 12B. 
-The area is identified by the postcode 12345. John stands at an impressive height of 175 cm.
+enriched_schema = {
+    "First Name": "John",
+    "Last Name": "Doe",
+    "Gender": "Male",
+    "Date of Birth": "1990-05-15",
+    "Address Line 1": "123 Elm Street",
+    "Address Line 2": "Apt 4B",
+    "House/Apartment Number": "4B",
+    "City": "Springfield",
+    "State/Region": "Illinois",
+    "Postal Code": "62704",
+    "Country": "United States",
+    "Phone Number": "+1-555-123-4567",
+    "Email Address": "john.doe@example.com",
+    "Height": "180 cm",
+    "Weight": "75 kg",
+    "Passport Number": "A12345678",
+    "Social Security Number": "123-45-6789",
+    "Marital Status": "Single",
+    "Nationality": "American",
+    "Languages Spoken": ["English", "Spanish"],
+    "Driver's License Number": "D1234567",
+    "Employer": "TechCorp Inc.",
+    "Job Title": "Software Engineer",
+    "Emergency Contact Name": "Jane Doe",
+    "Emergency Contact Number": "+1-555-987-6543",
+    "Medical Conditions": "None",
+    "Additional Notes": "N/A"
+}
+
+print(enriched_schema)
